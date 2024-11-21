@@ -3,16 +3,16 @@
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-        <title>Meu CRUD</title>
+        <title>Meu cadastro</title>
         <link rel="stylesheet" href="style.css"/>
         <script src="script.js"></script>
     </head>
     <body>
-        <form>
-            <label for="name">Nome</label><br>
-            <input type="text" id="name" name="name" placeholder="Nome"><br>
-            <label for="password">Senha</label><br>
-            <input type="password" id="password" name="password" placeholder="Senha"><br>
+        <form name="logInForm" id="logInForm" onsubmit="logIn()" method="get">
+            <label for="nameInput">Nome</label><br>
+            <input type="text" id="nameInput" name="nameInput" placeholder="Nome"><br>
+            <label for="passwordInput">Senha</label><br>
+            <input type="password" id="passwordInput" name="passwordInput" placeholder="Senha"><br>
             <a href="cadastro.html">Cadastrar</a>
             <input type="submit" value="Entrar">
         </form>
